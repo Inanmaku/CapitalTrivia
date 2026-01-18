@@ -42,22 +42,16 @@ Installation
 
 
 Clone the repository:
-
 git clone https://github.com/inanmaku/capitaltrivia.git
 cd capital-trivia
-
-
 Install dependencies:
-
 pip install PyQt5
-
-
 Run the app:
-
 python main.py
 
 
 This project demonstrates:
+
 Custom GUI design with PyQt5, including custom widgets, chat bubbles, and interactive elements.
 State management with progress tracking and deferred question logic.
 UX design thinking, including set-based repetition, feedback emotes, and natural input methods.
