@@ -2,7 +2,7 @@
 
 Capital Trivia is a Python-based educational quiz app built with PyQt5, designed to teach world capitals through an engaging chat-style interface that mimics a mobile messaging app. The app combines interactive design, progressive learning, and state persistence to create a polished educational experience.
 
-![Main interface](assets/screenshots/example.png)
+![Main interface](assets/screenshots/photos.png)
 
 
 
