@@ -1,0 +1,128 @@
+import os
+
+COUNTRIES = [
+    [
+        ("United States", "washington d.c."),
+        ("United Kingdom", "london"),
+        ("France", "paris"),
+        ("Germany", "berlin"),
+        ("Italy", "rome"),
+        ("Spain", "madrid"),
+        ("Canada", "ottawa"),
+        ("Australia", "canberra"),
+        ("Japan", "tokyo"),
+        ("China", "beijing"),
+        ("India", "new delhi"),
+        ("Brazil", "brasilia"),
+        ("Mexico", "mexico city"),
+        ("Russia", "moscow"),
+        ("South Korea", "seoul"),
+        ("Netherlands", "amsterdam"),
+        ("Sweden", "stockholm"),
+        ("Norway", "oslo"),
+        ("Denmark", "copenhagen"),
+        ("Finland", "helsinki")
+    ],
+    [
+        ("Switzerland", "bern"),
+        ("Greece", "athens"),
+        ("Turkey", "ankara"),
+        ("Egypt", "cairo"),
+        ("South Africa", "pretoria"),
+        ("Argentina", "buenos aires"),
+        ("Chile", "santiago"),
+        ("New Zealand", "wellington"),
+        ("Ireland", "dublin"),
+        ("Portugal", "lisbon"),
+        ("Belgium", "brussels"),
+        ("Austria", "vienna"),
+        ("Poland", "warsaw"),
+        ("Ukraine", "kyiv"),
+        ("Czech Republic", "prague"),
+        ("Hungary", "budapest"),
+        ("Romania", "bucharest"),
+        ("Thailand", "bangkok"),
+        ("Vietnam", "hanoi"),
+        ("Philippines", "manila")
+    ],
+    [
+        ("Indonesia", "jakarta"),
+        ("Saudi Arabia", "riyadh"),
+        ("Israel", "jerusalem"),
+        ("UAE", "abu dhabi"),
+        ("Singapore", "singapore"),
+        ("Malaysia", "kuala lumpur"),
+        ("Pakistan", "islamabad"),
+        ("Bangladesh", "dhaka"),
+        ("Nigeria", "abuja"),
+        ("Kenya", "nairobi"),
+        ("Morocco", "rabat"),
+        ("Peru", "lima"),
+        ("Colombia", "bogotá"),
+        ("Venezuela", "caracas"),
+        ("Cuba", "havana"),
+        ("Iceland", "reykjavik"),
+        ("Croatia", "zagreb"),
+        ("Serbia", "belgrade"),
+        ("Slovakia", "bratislava"),
+        ("Slovenia", "ljubljana")
+    ],
+    [
+        ("Estonia", "tallinn"),
+        ("Latvia", "riga"),
+        ("Lithuania", "vilnius"),
+        ("Bulgaria", "sofia"),
+        ("Georgia", "tbilisi"),
+        ("Qatar", "doha"),
+        ("Kuwait", "kuwait city"),
+        ("Oman", "muscat"),
+        ("Jordan", "amman"),
+        ("Lebanon", "beirut"),
+        ("Iran", "tehran"),
+        ("Iraq", "baghdad"),
+        ("Afghanistan", "kabul"),
+        ("Nepal", "kathmandu"),
+        ("Sri Lanka", "sri jayawardenepura kotte"),
+        ("Myanmar", "naypyidaw"),
+        ("Cambodia", "phnom penh"),
+        ("Laos", "vientiane"),
+        ("Mongolia", "ulaanbaatar"),
+        ("Ethiopia", "addis ababa")
+    ],
+    [
+        ("Tanzania", "dodoma"),
+        ("Ghana", "accra"),
+        ("Algeria", "algiers"),
+        ("Tunisia", "tunis"),
+        ("Sudan", "khartoum"),
+        ("Angola", "luanda"),
+        ("Ecuador", "quito"),
+        ("Bolivia", "sucre"),
+        ("Paraguay", "asunción"),
+        ("Uruguay", "montevideo"),
+        ("Panama", "panama city"),
+        ("Costa Rica", "san jose"),
+        ("Dominican Republic", "santo domingo"),
+        ("Haiti", "port-au-prince"),
+        ("Jamaica", "kingston"),
+        ("Luxembourg", "luxembourg"),
+        ("Monaco", "monaco"),
+        ("San Marino", "san marino"),
+        ("Liechtenstein", "vaduz"),
+        ("Andorra", "andorra la vella")
+    ],
+    [
+        ("Malta", "valletta"),
+        ("Vatican City", "vatican city"),
+        ("Palestine", "ramallah")
+    ]
+]
+
+ASSETS_PATH = "assets"
+EMOTES_PATH = os.path.join(ASSETS_PATH, "emotes")
+
+EMOTES = {
+    "proud": os.path.join(EMOTES_PATH, "proud.png"),
+    "interesting": os.path.join(EMOTES_PATH, "interesting.png"),
+    "awkward": os.path.join(EMOTES_PATH, "awkward.png")
+}
