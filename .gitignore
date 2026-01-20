@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+countries.pkl
+progress.pkl
+run.bat
+*.exe
