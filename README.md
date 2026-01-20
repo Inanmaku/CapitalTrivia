@@ -45,13 +45,29 @@ Experimental UI: Frameless window, chat bubbles, and interactive star elements d
 Installation
 
 
+Prerequisites:
+- Python 3.6 or higher installed on your system
+- pip (Python package installer)
+
 Clone the repository:
-git clone https://github.com/inanmaku/capitaltrivia.git
-cd capital-trivia
+```
+git clone https://github.com/inanmaku/CapitalTrivia.git
+cd CapitalTrivia
+```
+
 Install dependencies:
+```
+pip install -r requirements.txt
+```
+or manually:
+```
 pip install PyQt5
+```
+
 Run the app:
+```
 python main.py
+```
 
 
 This project demonstrates:

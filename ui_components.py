@@ -40,7 +40,7 @@ class Bubble(QWidget):
 
         self.text_label = QLabel(text, self.container)
         self.text_label.setWordWrap(True)
-        self.text_label.setFont(QFont("Alice", 12))
+        self.text_label.setFont(QFont("Alice", 10))
         self.text_label.setStyleSheet("color: black; background: transparent;")
         c_layout.addWidget(self.text_label)
 
@@ -89,7 +89,7 @@ class EditBubble(QWidget):
 
         if is_add_new:
             self.add_button = QPushButton("+")
-            self.add_button.setFont(QFont("Arial", 20, QFont.Bold))
+            self.add_button.setFont(QFont("Arial", 18, QFont.Bold))
             self.add_button.setStyleSheet("""
                 QPushButton {
                     color: white;
@@ -106,19 +106,19 @@ class EditBubble(QWidget):
             c_layout.addWidget(self.add_button, alignment=Qt.AlignCenter)
         else:
             self.question_edit = QLineEdit(question)
-            self.question_edit.setFont(QFont("Alice", 13))
+            self.question_edit.setFont(QFont("Alice", 11))
             self.question_edit.setStyleSheet("color: black; background: transparent; border: none;")
             self.question_edit.setAlignment(Qt.AlignCenter)
             self.question_edit.setPlaceholderText("Question")
 
             self.answer_edit = QLineEdit(answer)
-            self.answer_edit.setFont(QFont("Alice", 13))
+            self.answer_edit.setFont(QFont("Alice", 11))
             self.answer_edit.setStyleSheet("color: black; background: transparent; border: none;")
             self.answer_edit.setAlignment(Qt.AlignCenter)
             self.answer_edit.setPlaceholderText("Answer")
 
             self.remove_button = QPushButton("🗑️", self.container)
-            self.remove_button.setFont(QFont("Arial", 14))
+            self.remove_button.setFont(QFont("Arial", 12))
             self.remove_button.setStyleSheet("""
                 QPushButton {
                     color: black;

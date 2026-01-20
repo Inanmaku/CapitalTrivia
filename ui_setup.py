@@ -90,7 +90,7 @@ class UiSetup:
         self.app.answer_box = QLineEdit(self.app)
         self.app.answer_box.setGeometry(72, 712, 280, 34)
         self.app.answer_box.setPlaceholderText("Type your answer...")
-        self.app.answer_box.setStyleSheet("border: none; background: transparent; font-size: 14px; color: black;")
+        self.app.answer_box.setStyleSheet("border: none; background: transparent; font-size: 12px; color: black;")
         self.app.answer_box.returnPressed.connect(self.app.quiz_logic.check_answer)
 
         self.app.send_button = QPushButton("", self.app)
@@ -167,14 +167,14 @@ class UiSetup:
 
         self.app.edit_toggle_remove_button = QPushButton("", self.app)
         self.app.edit_toggle_remove_button.setGeometry(65, 140, 40, 30)
-        self.app.edit_toggle_remove_button.setStyleSheet("background: transparent; border: none; color: transparent; font-size: 16px; opacity: 0;")
+        self.app.edit_toggle_remove_button.setStyleSheet("background: transparent; border: none; color: transparent; font-size: 12px; opacity: 0;")
         self.app.edit_toggle_remove_button.clicked.connect(self.app.edit_manager.toggle_remove_buttons)
         self.app.edit_toggle_remove_button.hide()
         self.app.edit_toggle_remove_button.setToolTip("Toggle remove buttons")
 
         self.app.restart_button = QPushButton("", self.app)
         self.app.restart_button.setGeometry(65, 180, 40, 30)
-        self.app.restart_button.setStyleSheet("background: transparent; border: none; color: transparent; font-size: 16px; opacity: 0;")
+        self.app.restart_button.setStyleSheet("background: transparent; border: none; color: transparent; font-size: 12px; opacity: 0;")
         self.app.restart_button.clicked.connect(self.app.edit_manager.restart_questions)
         self.app.restart_button.hide()
         self.app.restart_button.setToolTip("Restart to original questions")
@@ -190,7 +190,7 @@ class UiSetup:
         self.app.clock_label = QLabel(self.app)
         self.app.clock_label.setGeometry(73, 20, 100, 30)
         self.app.clock_label.setStyleSheet("color: black; background: transparent;")
-        self.app.clock_label.setFont(QFont("Arial", 9, QFont.Bold))
+        self.app.clock_label.setFont(QFont("Arial", 7, QFont.Bold))
         self.app.clock_timer = QTimer(self.app)
         self.app.clock_timer.timeout.connect(lambda: self.app.clock_label.setText(QTime.currentTime().toString("hh:mm")))
         self.app.clock_timer.start(1000)
@@ -201,7 +201,7 @@ class UiSetup:
             QPushButton {
                 color: transparent;
                 background: transparent;
-                font-size: 18px;
+                font-size: 14px;
                 border: none;
             }
             QPushButton:hover {
@@ -217,7 +217,7 @@ class UiSetup:
             QPushButton {
                 color: transparent;
                 background: transparent;
-                font-size: 18px;
+                font-size: 14px;
                 border: none;
             }
             QPushButton:hover {

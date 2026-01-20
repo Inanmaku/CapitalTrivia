@@ -73,7 +73,7 @@ class QuizApp(QWidget):
         msg.setWindowTitle('Save Progress')
         msg.setText('Do you want to save your progress before closing?')
         msg.setStandardButtons(QMessageBox.Yes | QMessageBox.No | QMessageBox.Cancel)
-        msg.setStyleSheet("QMessageBox { background-color: #E6E6FA; font-size: 12px; }")
+        msg.setStyleSheet("QMessageBox { background-color: #E6E6FA; font-size: 10px; }")
         msg.setMinimumSize(300, 120)
         cancel_button = msg.button(QMessageBox.Cancel)
         if cancel_button:
